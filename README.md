@@ -1,18 +1,16 @@
-# Taku-Flutter-Demo
+# TPN-Flutter-Demo
 
-A new Flutter project.
+Demonstrates how to use the anythink_sdk plugin.
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+This project is a starting point for a Flutter application.
 
-## Integration instructions
+A few resources to get you started if this is your first Flutter project:
 
-https://help.takuad.com/docs/flutter
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-## LICENSE
-
-See the [LICENSE](https://github.com/TakuMediation/Taku_Flutter_Demo/blob/main/LICENSE) file.
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

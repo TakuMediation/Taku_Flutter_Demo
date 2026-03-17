@@ -13,7 +13,7 @@ final InitManager = InitTool();
 class InitTool {
   // 打开SDK的Debug log，强烈建议在测试阶段打开，方便排查问题。
   setLogEnabled() async {
-    await ATInitManger.setLogEnabled(
+     ATInitManger.setLogEnabled(
       logEnabled: true,
     ).then((value) {
       print('Set log switch $value');
@@ -22,7 +22,7 @@ class InitTool {
 
   // 设置渠道，可用于统计数据和进行流量分组
   setChannelStr() async {
-    await ATInitManger.setChannelStr(
+     ATInitManger.setChannelStr(
       channelStr: "test_setChannel",
     ).then((value) {
       print('Set up channels $value');
@@ -31,7 +31,7 @@ class InitTool {
 
   // 设置子渠道，可用于统计数据和进行流量分组
   setSubchannelStr() async {
-    await ATInitManger.setSubChannelStr(
+     ATInitManger.setSubChannelStr(
       subchannelStr: "test_setSubchannelStr",
     ).then((value) {
       print('Set up sub-channels');
@@ -40,7 +40,7 @@ class InitTool {
 
   // 设置自定义的Map信息，可匹配后台配置的对应流量分组（App纬度）,也可以用设置用户信息（可选配置）
   setCustomDataDic() async {
-    await ATInitManger.setCustomDataMap(
+     ATInitManger.setCustomDataMap(
       customDataMap: {
         'setCustomDataDic': 'myCustomDataDic',
       },
@@ -51,7 +51,7 @@ class InitTool {
 
   // 设置自定义的Map信息，可匹配后台配置的对应的流量分组（Placement纬度）,也可以用设置用户信息（可选配置）
   setPlacementCustomData() async {
-    await ATInitManger.setPlacementCustomData(
+     ATInitManger.setPlacementCustomData(
       placementIDStr: 'b5b72b21184aa8',
       placementCustomDataMap: {
         'setPlacementCustomData': 'test_setPlacementCustomData'
@@ -63,7 +63,7 @@ class InitTool {
 
   // 设置排除交叉推广App列表
   setExludeBundleIDArray() async {
-    await ATInitManger.setExludeBundleIDArray(
+     ATInitManger.setExludeBundleIDArray(
       exludeBundleIDList: ['test_setExludeBundleIDArray'],
     ).then((value) {
       print('Set up exclusion of cross-promotion');
@@ -72,7 +72,7 @@ class InitTool {
 
   // 通过ip判断是否用户所在地区
   getUserLocation() async {
-    await ATInitManger.getUserLocation().then((value) {
+     ATInitManger.getUserLocation().then((value) {
       print('flutter: Get user location -- ${value.toString()}');
     });
   }
@@ -86,7 +86,7 @@ class InitTool {
 
   // 设置数据同意级别
   setDataConsentSet() async {
-    await ATInitManger.setDataConsentSet(
+     ATInitManger.setDataConsentSet(
             gdprLevel: ATInitManger.dataConsentSetPersonalized())
         .then((value) {
       print('flutter: Set up GDPR${value.toString()}');
@@ -95,7 +95,7 @@ class InitTool {
 
   //设置禁止SDK收集的数据
   deniedUploadDeviceInfo() async {
-    await ATInitManger.deniedUploadDeviceInfo(
+     ATInitManger.deniedUploadDeviceInfo(
         deniedUploadDeviceInfoList: [ATInitManger.aOAID()]).then((value) {
       print('flutter: End of initialization');
     });
@@ -112,23 +112,23 @@ class InitTool {
   // 设置预置策略的放置路径
   setPresetPlacementConfigPath() async {
     print("flutter: flutter setPresetPlacementConfigPath");
-    await ATInitManger.setPresetPlacementConfigPath(pathStr: "localStrategy");
+    ATInitManger.setPresetPlacementConfigPath(pathStr: "localStrategy");
   }
 
   // 展示GDPR的界面，建议使用showGDPRConsentDialog()
   showGDPRAuth() async {
-    await ATInitManger.showGDPRAuth();
+     ATInitManger.showGDPRAuth();
   }
 
   // 展示GDPR+UMP流程弹窗
   showGDPRConsentDialog() async {
-    await ATInitManger.showGDPRConsentDialog();
+     ATInitManger.showGDPRConsentDialog();
   }
 
   //展示DebugUI
   showDebugUI() async {
     print('flutter:showDebugUI');
-    await ATInitManger.showDebuggerUI(debugKey: Configuration.debugKey);
+    ATInitManger.showDebuggerUI(debugKey: Configuration.debugKey);
   }
 
   startPreLoadAd() {

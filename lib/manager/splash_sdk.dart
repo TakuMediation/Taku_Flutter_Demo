@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'dart:io';
 
 import 'package:anythink_sdk/at_index.dart';
 import '../configuration_sdk.dart';
@@ -126,9 +127,14 @@ class SplashTool {
 
   //加载广告
   loadSplashAd() async {
+    final String template =
+    Platform.isIOS ? "TestCustomBottomView" : "splash_bottom_template";
      ATSplashManager.loadSplash(
         placementID: Configuration.splashPlacementID,
-        extraMap: {ATSplashManager.tolerateTimeout(): 5000});
+        extraMap: {ATSplashManager.tolerateTimeout(): 5000,
+        ATSplashManager.bottomTemplate(): template,
+        ATSplashManager.bottomRatio(): 0.18,
+        });
   }
 
   //检查是否准备就绪

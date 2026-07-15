@@ -5,10 +5,10 @@ packages:
     dependency: "direct main"
     description:
       name: anythink_sdk
-      sha256: "211379b7ff2ba95a0b8a35aebb8438516323c3433487ae628e3497b55ca0e525"
+      sha256: "891d53948dcf6b3917df0de7795d92d3889f70c8a04fa8e6c6bec7a33c2a0fc1"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.13"
+    version: "1.0.14"
   async:
     dependency: transitive
     description:

@@ -1,17 +1,17 @@
 PODS:
-  - anythink_sdk (1.0.13):
-    - AnyThinkiOS (= 6.5.47)
-    - AnyThinkMediationAdxSmartdigimktCNAdapter (= 6.5.45)
+  - anythink_sdk (1.0.14):
+    - AnyThinkiOS (= 6.5.72)
+    - AnyThinkMediationAdxSmartdigimktCNAdapter (= 6.5.75.2.0)
     - AnyThinkMediationGDTAdapter (= 4.15.90.0)
     - AnyThinkMediationMintegralAdapter (= 8.0.8.0)
     - Flutter
     - GoogleUserMessagingPlatform
-  - AnyThinkiOS (6.5.47):
-    - AnyThinkiOS/AnyThinkSDK (= 6.5.47)
-  - AnyThinkiOS/AnyThinkSDK (6.5.47)
-  - AnyThinkMediationAdxSmartdigimktCNAdapter (6.5.45.0):
-    - AnyThinkiOS (>= 6.5.30)
-    - SmartdigimktCNSDK (= 6.5.45)
+  - AnyThinkiOS (6.5.72):
+    - AnyThinkiOS/AnyThinkSDK (= 6.5.72)
+  - AnyThinkiOS/AnyThinkSDK (6.5.72)
+  - AnyThinkMediationAdxSmartdigimktCNAdapter (6.5.75.2.0):
+    - AnyThinkiOS (>= 6.5.60)
+    - SmartdigimktCNSDK (= 6.5.75)
   - AnyThinkMediationGDTAdapter (4.15.90.0):
     - AnyThinkiOS (>= 6.4.94)
     - GDTMobSDK (= 4.15.90)
@@ -46,7 +46,7 @@ PODS:
     - MintegralAdSDK/NativeAd
   - MintegralAdSDK/SplashAd (8.0.8):
     - MintegralAdSDK/NativeAd
-  - SmartdigimktCNSDK (6.5.45)
+  - SmartdigimktCNSDK (6.5.75)
 
 DEPENDENCIES:
   - anythink_sdk (from `.symlinks/plugins/anythink_sdk/ios`)
@@ -70,16 +70,16 @@ EXTERNAL SOURCES:
     :path: Flutter
 
 SPEC CHECKSUMS:
-  anythink_sdk: dda876d4ac63e01b8f15061c04052b8b0e0d7c4e
-  AnyThinkiOS: fcdc25dc7a3c9e015285c210445e4351d8d6a962
-  AnyThinkMediationAdxSmartdigimktCNAdapter: 9605f2d80f4f0fdd1fb1348ccac89b60a1128c31
+  anythink_sdk: b56a6fddb6958f2a07ca77f50a3ac0fa8ff0b041
+  AnyThinkiOS: 9b8612ace61f8fcf4388a587d63e34d5bca34781
+  AnyThinkMediationAdxSmartdigimktCNAdapter: de7de30096fcfb9a14bfca83faf1a40250704d83
   AnyThinkMediationGDTAdapter: 7cbc46cabf677366eabfd3a0670f1099118e9c7a
   AnyThinkMediationMintegralAdapter: 8dfb8140a56665482e52f6e62e7d4747ebd8e474
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   GDTMobSDK: fdec348687362cf20effb182286a5d1fbd3e8467
   GoogleUserMessagingPlatform: befe603da6501006420c206222acd449bba45a9c
   MintegralAdSDK: f02fdbab6494030b4fe4b01d8bbf654263834a20
-  SmartdigimktCNSDK: acd2e564e496385d6470767335431d91b0daa18b
+  SmartdigimktCNSDK: 15879642ea422f46aadd2af9ddce32cbc50e942c
 
 PODFILE CHECKSUM: 9254729d98df9697a6e0dc0694775cea407028ef
 
